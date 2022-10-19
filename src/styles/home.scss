@@ -1,0 +1,56 @@
+@import "color";
+
+.home{
+    height: 100vh;
+    overflow-x: hidden;
+    >div{
+        padding-left: 8rem;
+        padding-top: 10rem;
+        >h1{
+            font-size: 4rem;
+        }
+        >p{
+            font-size: 1.2rem;
+        }
+    }
+    >a{
+        display: block;
+        margin: 2rem 8rem;
+        width: 10rem;
+        background-color: $red;
+        color:white;
+        padding:1rem;
+        border-radius: 10px;
+        text-align: center;
+        &:hover{
+            background-color: $lightdark;
+        }
+    }
+
+    &::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-image: url('../assets/v915-techi-020.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        z-index: -1;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .home{
+        >div{
+            padding-left: 0rem;
+            padding-top: 8rem;
+            text-align: center;
+        }
+        >a{
+            margin: 2rem auto;
+        }
+    }
+    
+}
+

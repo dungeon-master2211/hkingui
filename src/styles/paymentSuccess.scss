@@ -1,0 +1,32 @@
+@import 'color';
+
+.paymentSuccess{
+    height:80vh;
+    width:100%;
+    background-color: $pink;
+    padding-top:1rem;
+    >main{
+        max-width: 900px;
+        width:100%; 
+        background-color: white;
+        height: 200px;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: auto;
+        >h3{
+            font-size: 2rem;
+        }
+        >p{
+            font-size: 1rem;
+        }
+        >a{
+            background-color: $red;
+            color:white;
+            padding:1rem;
+            border-radius: 5px;
+
+        }
+    }
+}

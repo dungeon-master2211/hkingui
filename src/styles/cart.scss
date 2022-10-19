@@ -1,0 +1,88 @@
+@import 'color';
+.cart{
+    height:100%;
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    >main{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    >article{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding:2rem;
+        >div{
+            display: flex;
+            justify-content: space-between;
+            width:80%;
+
+        }
+        
+    }
+    >a{
+        display: block;
+        color:white;
+        padding:0.5rem;
+        background-color: $red;
+        cursor: pointer;
+        border:none;
+        border-radius: 5px;
+        margin: 0 auto;
+        max-width: 30%;
+        text-align: center;
+        
+    }
+
+    .cartItem{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+        padding:1.5rem;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        margin:1rem auto;
+        width: 80%;
+        background-color: rgb(242, 243, 243);
+        border-radius: 5px;
+        >div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            > .qtyBtnGrp{
+                display: flex;
+                justify-content: space-evenly;
+                margin:5px auto;
+                width:200px;
+                >input{
+                    text-align: center;
+                    width:50px;
+                    margin:0 2px;
+                    padding:1rem;
+                }
+                >button{
+                    padding:1rem;
+                    color:white;
+                    background-color: $red;
+                    cursor: pointer;
+                    border: none;
+                    border-radius: 5px;;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:600px){
+    .cartItem{
+        >div{
+            width:100%;
+        }
+    }
+}
